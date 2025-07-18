@@ -1,12 +1,10 @@
 import os
 import shutil
 
-# from langchain.chat_models import AzureChatOpenAI
 import chromadb
 import spacy
 import yaml
 from dotenv import load_dotenv
-# from openai import AzureOpenAI
 from langchain_google_genai import ChatGoogleGenerativeAI
 from pyprojroot import here
 

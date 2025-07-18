@@ -113,11 +113,6 @@ class PrepareVectorDBFromTabularData:
             doc = self.nlp(output_str)
             embedding = doc.vector  # 300-dim vector
 
-            # response = self.APPCFG.azure_openai_client.embeddings.create(
-            #     input = output_str,
-            #     model= self.APPCFG.embedding_model_name
-            # )
-
             docs.append(output_str)
             metadatas.append({"source": file_name})
             ids.append(f"id{index}")

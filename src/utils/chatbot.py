@@ -145,18 +145,6 @@ class ChatBot:
                     [system_role, user_msg]
                 )
                 response = response.content
-                # messages = [
-                #     {"role": "system", "content": str(
-                #         APPCFG.rag_llm_system_role
-                #     )},
-                #     {"role": "user", "content": prompt}
-                # ]
-
-                # llm_response = APPCFG.azure_openai_client.chat.completions.create(
-                #     model=APPCFG.model_name,
-                #     messages=messages
-                # )
-                # response = llm_response.choices[0].message.content
 
             # Get the `response` variable from any of the selected scenarios and pass it to the user.
             chatbot.append((message, response))
